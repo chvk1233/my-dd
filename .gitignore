@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.egg-info/
+
+# Flask / DB / env
+flask/backend/data/*.db
+.env
+.env.*
+
+# Node / Next.js
+nextjs/node_modules/
+nextjs/.next/
+nextjs/out/
+nextjs/coverage/
+nextjs/test-results/
+nextjs/playwright-report/
+nextjs/.vercel/
+
+# ML model weights (restore via train_baseline.py / train_hf_kcelectra.py)
+**/models/hf/
+**/*.safetensors
+**/*.joblib
+hf_output_*/
+AI/hf_output_*/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

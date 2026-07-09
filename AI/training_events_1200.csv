@@ -1,0 +1,1201 @@
+﻿event_id,store_id,channel,message,event_type,severity,sentiment,requires_response,recommended_action
+train-0001,store-alpha,counter,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0002,store-beta,phone,전화 문의 주문이 9분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0003,store-gamma,mobile_order,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0004,store-delta,staff_app,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,medium,negative,true,주문 내역과 실제 제공 상품 대조
+train-0005,store-alpha,delivery,직원이 창고 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-0006,store-beta,counter,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0007,store-gamma,phone,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0008,store-delta,mobile_order,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0009,store-alpha,staff_app,직원 앱에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,medium,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0010,store-beta,delivery,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-0011,store-gamma,counter,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다. 운영자는 처리 상태를 기록해야 합니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0012,store-delta,phone,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0013,store-alpha,mobile_order,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-0014,store-beta,staff_app,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,low,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0015,store-gamma,delivery,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0016,store-delta,counter,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,inventory,high,neutral,true,대체 상품 안내
+train-0017,store-alpha,phone,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0018,store-beta,mobile_order,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0019,store-gamma,staff_app,냉장 진열대 온도가 8도로 올라 상품 상태 점검이 필요합니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0020,store-delta,delivery,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0021,store-alpha,counter,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다. 운영자는 처리 상태를 기록해야 합니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-0022,store-beta,phone,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0023,store-gamma,mobile_order,창고 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-0024,store-delta,staff_app,진열대 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0025,store-alpha,delivery,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0026,store-beta,counter,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0027,store-gamma,phone,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0028,store-delta,mobile_order,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-0029,store-alpha,staff_app,창고 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,low,neutral,true,마감 체크리스트에 반영
+train-0030,store-beta,delivery,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0031,store-gamma,counter,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0032,store-delta,phone,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0033,store-alpha,mobile_order,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0034,store-beta,staff_app,직원 앱 주문이 13분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,high,negative,true,예상 대기 시간 안내
+train-0035,store-gamma,delivery,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0036,store-delta,counter,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0037,store-alpha,phone,직원이 카운터 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,low,neutral,false,마감 체크리스트에 반영
+train-0038,store-beta,mobile_order,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,low,negative,true,매장 환경 점검
+train-0039,store-gamma,staff_app,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0040,store-delta,delivery,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,high,neutral,true,대체 상품 안내
+train-0041,store-alpha,counter,카운터에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다. 운영자는 처리 상태를 기록해야 합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0042,store-beta,phone,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0043,store-gamma,mobile_order,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0044,store-delta,staff_app,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0045,store-alpha,delivery,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-0046,store-beta,counter,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,complaint,medium,negative,true,매장 환경 점검
+train-0047,store-gamma,phone,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,medium,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0048,store-delta,mobile_order,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0049,store-alpha,staff_app,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0050,store-beta,delivery,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0051,store-gamma,counter,냉장 진열대 온도가 13도로 올라 상품 상태 점검이 필요합니다. 운영자는 처리 상태를 기록해야 합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0052,store-delta,phone,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,medium,negative,true,주문 내역과 실제 제공 상품 대조
+train-0053,store-alpha,mobile_order,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-0054,store-beta,staff_app,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0055,store-gamma,delivery,카운터 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0056,store-delta,counter,주방 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0057,store-alpha,phone,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,medium,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0058,store-beta,mobile_order,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-0059,store-gamma,staff_app,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,high,negative,true,온도와 포장 상태 점검
+train-0060,store-delta,delivery,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0061,store-alpha,counter,카운터 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-0062,store-beta,phone,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,low,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0063,store-gamma,mobile_order,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0064,store-delta,staff_app,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,high,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0065,store-alpha,delivery,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0066,store-beta,counter,카운터 주문이 17분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0067,store-gamma,phone,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0068,store-delta,mobile_order,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0069,store-alpha,staff_app,직원이 픽업존 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,medium,neutral,true,마감 체크리스트에 반영
+train-0070,store-beta,delivery,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0071,store-gamma,counter,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다. 운영자는 처리 상태를 기록해야 합니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-0072,store-delta,phone,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0073,store-alpha,mobile_order,모바일 주문에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0074,store-beta,staff_app,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0075,store-gamma,delivery,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0076,store-delta,counter,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-0077,store-alpha,phone,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,low,neutral,true,마감 체크리스트에 반영
+train-0078,store-beta,mobile_order,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0079,store-gamma,staff_app,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0080,store-delta,delivery,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0081,store-alpha,counter,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다. 운영자는 처리 상태를 기록해야 합니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0082,store-beta,phone,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,high,negative,true,예상 대기 시간 안내
+train-0083,store-gamma,mobile_order,냉장 진열대 온도가 9도로 올라 상품 상태 점검이 필요합니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0084,store-delta,staff_app,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0085,store-alpha,delivery,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-0086,store-beta,counter,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,low,negative,true,매장 환경 점검
+train-0087,store-gamma,phone,픽업존 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0088,store-delta,mobile_order,입구 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,high,neutral,true,대체 상품 안내
+train-0089,store-alpha,staff_app,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0090,store-beta,delivery,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0091,store-gamma,counter,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0092,store-delta,phone,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0093,store-alpha,mobile_order,픽업존 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-0094,store-beta,staff_app,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0095,store-gamma,delivery,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-0096,store-delta,counter,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0097,store-alpha,phone,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0098,store-beta,mobile_order,모바일 주문 주문이 21분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0099,store-gamma,staff_app,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0100,store-delta,delivery,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-0101,store-alpha,counter,직원이 창고 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다. 운영자는 처리 상태를 기록해야 합니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-0102,store-beta,phone,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0103,store-gamma,mobile_order,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0104,store-delta,staff_app,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0105,store-alpha,delivery,배달에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0106,store-beta,counter,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-0107,store-gamma,phone,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,high,negative,true,온도와 포장 상태 점검
+train-0108,store-delta,mobile_order,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0109,store-alpha,staff_app,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,low,neutral,false,마감 체크리스트에 반영
+train-0110,store-beta,delivery,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,low,negative,true,매장 환경 점검
+train-0111,store-gamma,counter,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다. 운영자는 처리 상태를 기록해야 합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0112,store-delta,phone,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,high,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0113,store-alpha,mobile_order,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0114,store-beta,staff_app,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0115,store-gamma,delivery,냉장 진열대 온도가 14도로 올라 상품 상태 점검이 필요합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0116,store-delta,counter,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0117,store-alpha,phone,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,medium,neutral,true,마감 체크리스트에 반영
+train-0118,store-beta,mobile_order,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0119,store-gamma,staff_app,창고 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,medium,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0120,store-delta,delivery,진열대 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0121,store-alpha,counter,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0122,store-beta,phone,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0123,store-gamma,mobile_order,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0124,store-delta,staff_app,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,medium,negative,true,주문 내역과 실제 제공 상품 대조
+train-0125,store-alpha,delivery,창고 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-0126,store-beta,counter,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0127,store-gamma,phone,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0128,store-delta,mobile_order,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0129,store-alpha,staff_app,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,medium,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0130,store-beta,delivery,배달 주문이 25분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-0131,store-gamma,counter,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다. 운영자는 처리 상태를 기록해야 합니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0132,store-delta,phone,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0133,store-alpha,mobile_order,직원이 카운터 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-0134,store-beta,staff_app,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,low,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0135,store-gamma,delivery,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0136,store-delta,counter,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,inventory,high,neutral,true,대체 상품 안내
+train-0137,store-alpha,phone,전화 문의에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0138,store-beta,mobile_order,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0139,store-gamma,staff_app,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0140,store-delta,delivery,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0141,store-alpha,counter,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다. 운영자는 처리 상태를 기록해야 합니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-0142,store-beta,phone,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0143,store-gamma,mobile_order,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-0144,store-delta,staff_app,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0145,store-alpha,delivery,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0146,store-beta,counter,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0147,store-gamma,phone,냉장 진열대 온도가 10도로 올라 상품 상태 점검이 필요합니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0148,store-delta,mobile_order,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-0149,store-alpha,staff_app,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,low,neutral,true,마감 체크리스트에 반영
+train-0150,store-beta,delivery,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0151,store-gamma,counter,카운터 통로에 박스가 쌓여 이동 동선이 막혔습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0152,store-delta,phone,주방 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0153,store-alpha,mobile_order,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0154,store-beta,staff_app,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,high,negative,true,예상 대기 시간 안내
+train-0155,store-gamma,delivery,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0156,store-delta,counter,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0157,store-alpha,phone,카운터 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,low,neutral,false,마감 체크리스트에 반영
+train-0158,store-beta,mobile_order,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,low,negative,true,매장 환경 점검
+train-0159,store-gamma,staff_app,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0160,store-delta,delivery,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,high,neutral,true,대체 상품 안내
+train-0161,store-alpha,counter,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다. 운영자는 처리 상태를 기록해야 합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0162,store-beta,phone,전화 문의 주문이 29분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0163,store-gamma,mobile_order,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0164,store-delta,staff_app,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0165,store-alpha,delivery,직원이 픽업존 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-0166,store-beta,counter,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,complaint,medium,negative,true,매장 환경 점검
+train-0167,store-gamma,phone,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,medium,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0168,store-delta,mobile_order,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0169,store-alpha,staff_app,직원 앱에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0170,store-beta,delivery,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0171,store-gamma,counter,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다. 운영자는 처리 상태를 기록해야 합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0172,store-delta,phone,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,medium,negative,true,주문 내역과 실제 제공 상품 대조
+train-0173,store-alpha,mobile_order,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-0174,store-beta,staff_app,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0175,store-gamma,delivery,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0176,store-delta,counter,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0177,store-alpha,phone,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,medium,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0178,store-beta,mobile_order,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-0179,store-gamma,staff_app,냉장 진열대 온도가 15도로 올라 상품 상태 점검이 필요합니다.,quality,high,negative,true,온도와 포장 상태 점검
+train-0180,store-delta,delivery,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0181,store-alpha,counter,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-0182,store-beta,phone,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,low,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0183,store-gamma,mobile_order,픽업존 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0184,store-delta,staff_app,입구 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,high,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0185,store-alpha,delivery,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0186,store-beta,counter,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0187,store-gamma,phone,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0188,store-delta,mobile_order,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0189,store-alpha,staff_app,픽업존 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,medium,neutral,true,마감 체크리스트에 반영
+train-0190,store-beta,delivery,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0191,store-gamma,counter,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다. 운영자는 처리 상태를 기록해야 합니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-0192,store-delta,phone,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0193,store-alpha,mobile_order,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0194,store-beta,staff_app,직원 앱 주문이 33분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0195,store-gamma,delivery,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0196,store-delta,counter,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-0197,store-alpha,phone,직원이 창고 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,low,neutral,true,마감 체크리스트에 반영
+train-0198,store-beta,mobile_order,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0199,store-gamma,staff_app,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0200,store-delta,delivery,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0201,store-alpha,counter,카운터에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다. 운영자는 처리 상태를 기록해야 합니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0202,store-beta,phone,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,high,negative,true,예상 대기 시간 안내
+train-0203,store-gamma,mobile_order,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0204,store-delta,staff_app,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0205,store-alpha,delivery,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-0206,store-beta,counter,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,low,negative,true,매장 환경 점검
+train-0207,store-gamma,phone,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0208,store-delta,mobile_order,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,high,neutral,true,대체 상품 안내
+train-0209,store-alpha,staff_app,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0210,store-beta,delivery,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0211,store-gamma,counter,냉장 진열대 온도가 11도로 올라 상품 상태 점검이 필요합니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0212,store-delta,phone,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0213,store-alpha,mobile_order,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-0214,store-beta,staff_app,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0215,store-gamma,delivery,창고 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-0216,store-delta,counter,진열대 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0217,store-alpha,phone,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0218,store-beta,mobile_order,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0219,store-gamma,staff_app,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0220,store-delta,delivery,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-0221,store-alpha,counter,창고 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다. 운영자는 처리 상태를 기록해야 합니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-0222,store-beta,phone,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0223,store-gamma,mobile_order,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0224,store-delta,staff_app,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0225,store-alpha,delivery,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0226,store-beta,counter,카운터 주문이 9분 이상 지연되어 고객이 픽업 시간을 문의했습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-0227,store-gamma,phone,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,high,negative,true,온도와 포장 상태 점검
+train-0228,store-delta,mobile_order,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0229,store-alpha,staff_app,직원이 카운터 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,low,neutral,false,마감 체크리스트에 반영
+train-0230,store-beta,delivery,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,low,negative,true,매장 환경 점검
+train-0231,store-gamma,counter,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다. 운영자는 처리 상태를 기록해야 합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0232,store-delta,phone,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,high,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0233,store-alpha,mobile_order,모바일 주문에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0234,store-beta,staff_app,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0235,store-gamma,delivery,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0236,store-delta,counter,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0237,store-alpha,phone,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,medium,neutral,true,마감 체크리스트에 반영
+train-0238,store-beta,mobile_order,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0239,store-gamma,staff_app,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,medium,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0240,store-delta,delivery,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0241,store-alpha,counter,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0242,store-beta,phone,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0243,store-gamma,mobile_order,냉장 진열대 온도가 16도로 올라 상품 상태 점검이 필요합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0244,store-delta,staff_app,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,medium,negative,true,주문 내역과 실제 제공 상품 대조
+train-0245,store-alpha,delivery,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-0246,store-beta,counter,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0247,store-gamma,phone,카운터 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0248,store-delta,mobile_order,주방 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0249,store-alpha,staff_app,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,medium,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0250,store-beta,delivery,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-0251,store-gamma,counter,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다. 운영자는 처리 상태를 기록해야 합니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0252,store-delta,phone,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0253,store-alpha,mobile_order,카운터 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-0254,store-beta,staff_app,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,low,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0255,store-gamma,delivery,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0256,store-delta,counter,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,inventory,high,neutral,true,대체 상품 안내
+train-0257,store-alpha,phone,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0258,store-beta,mobile_order,모바일 주문 주문이 13분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0259,store-gamma,staff_app,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0260,store-delta,delivery,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0261,store-alpha,counter,직원이 픽업존 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다. 운영자는 처리 상태를 기록해야 합니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-0262,store-beta,phone,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0263,store-gamma,mobile_order,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-0264,store-delta,staff_app,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0265,store-alpha,delivery,배달에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0266,store-beta,counter,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0267,store-gamma,phone,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0268,store-delta,mobile_order,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-0269,store-alpha,staff_app,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,low,neutral,true,마감 체크리스트에 반영
+train-0270,store-beta,delivery,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0271,store-gamma,counter,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0272,store-delta,phone,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0273,store-alpha,mobile_order,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0274,store-beta,staff_app,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,high,negative,true,예상 대기 시간 안내
+train-0275,store-gamma,delivery,냉장 진열대 온도가 12도로 올라 상품 상태 점검이 필요합니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0276,store-delta,counter,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0277,store-alpha,phone,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,low,neutral,false,마감 체크리스트에 반영
+train-0278,store-beta,mobile_order,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,low,negative,true,매장 환경 점검
+train-0279,store-gamma,staff_app,픽업존 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0280,store-delta,delivery,입구 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,high,neutral,true,대체 상품 안내
+train-0281,store-alpha,counter,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다. 운영자는 처리 상태를 기록해야 합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0282,store-beta,phone,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0283,store-gamma,mobile_order,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0284,store-delta,staff_app,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0285,store-alpha,delivery,픽업존 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-0286,store-beta,counter,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,complaint,medium,negative,true,매장 환경 점검
+train-0287,store-gamma,phone,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,medium,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0288,store-delta,mobile_order,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0289,store-alpha,staff_app,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0290,store-beta,delivery,배달 주문이 17분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0291,store-gamma,counter,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다. 운영자는 처리 상태를 기록해야 합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0292,store-delta,phone,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,medium,negative,true,주문 내역과 실제 제공 상품 대조
+train-0293,store-alpha,mobile_order,직원이 창고 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-0294,store-beta,staff_app,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0295,store-gamma,delivery,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0296,store-delta,counter,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0297,store-alpha,phone,전화 문의에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,medium,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0298,store-beta,mobile_order,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-0299,store-gamma,staff_app,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,high,negative,true,온도와 포장 상태 점검
+train-0300,store-delta,delivery,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0301,store-alpha,counter,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-0302,store-beta,phone,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,low,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0303,store-gamma,mobile_order,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0304,store-delta,staff_app,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,high,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0305,store-alpha,delivery,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0306,store-beta,counter,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0307,store-gamma,phone,냉장 진열대 온도가 8도로 올라 상품 상태 점검이 필요합니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0308,store-delta,mobile_order,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0309,store-alpha,staff_app,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,medium,neutral,true,마감 체크리스트에 반영
+train-0310,store-beta,delivery,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0311,store-gamma,counter,창고 통로에 박스가 쌓여 이동 동선이 막혔습니다. 운영자는 처리 상태를 기록해야 합니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-0312,store-delta,phone,진열대 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0313,store-alpha,mobile_order,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0314,store-beta,staff_app,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0315,store-gamma,delivery,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0316,store-delta,counter,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-0317,store-alpha,phone,창고 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,low,neutral,true,마감 체크리스트에 반영
+train-0318,store-beta,mobile_order,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0319,store-gamma,staff_app,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0320,store-delta,delivery,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0321,store-alpha,counter,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다. 운영자는 처리 상태를 기록해야 합니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0322,store-beta,phone,전화 문의 주문이 21분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,high,negative,true,예상 대기 시간 안내
+train-0323,store-gamma,mobile_order,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0324,store-delta,staff_app,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0325,store-alpha,delivery,직원이 카운터 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-0326,store-beta,counter,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,low,negative,true,매장 환경 점검
+train-0327,store-gamma,phone,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0328,store-delta,mobile_order,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,high,neutral,true,대체 상품 안내
+train-0329,store-alpha,staff_app,직원 앱에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0330,store-beta,delivery,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0331,store-gamma,counter,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0332,store-delta,phone,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0333,store-alpha,mobile_order,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-0334,store-beta,staff_app,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0335,store-gamma,delivery,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-0336,store-delta,counter,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0337,store-alpha,phone,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0338,store-beta,mobile_order,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0339,store-gamma,staff_app,냉장 진열대 온도가 13도로 올라 상품 상태 점검이 필요합니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0340,store-delta,delivery,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-0341,store-alpha,counter,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다. 운영자는 처리 상태를 기록해야 합니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-0342,store-beta,phone,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0343,store-gamma,mobile_order,카운터 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0344,store-delta,staff_app,주방 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0345,store-alpha,delivery,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0346,store-beta,counter,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-0347,store-gamma,phone,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,high,negative,true,온도와 포장 상태 점검
+train-0348,store-delta,mobile_order,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0349,store-alpha,staff_app,카운터 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,low,neutral,false,마감 체크리스트에 반영
+train-0350,store-beta,delivery,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,low,negative,true,매장 환경 점검
+train-0351,store-gamma,counter,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다. 운영자는 처리 상태를 기록해야 합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0352,store-delta,phone,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,high,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0353,store-alpha,mobile_order,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0354,store-beta,staff_app,직원 앱 주문이 25분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0355,store-gamma,delivery,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0356,store-delta,counter,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0357,store-alpha,phone,직원이 픽업존 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,medium,neutral,true,마감 체크리스트에 반영
+train-0358,store-beta,mobile_order,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0359,store-gamma,staff_app,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,medium,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0360,store-delta,delivery,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0361,store-alpha,counter,카운터에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0362,store-beta,phone,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0363,store-gamma,mobile_order,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0364,store-delta,staff_app,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,medium,negative,true,주문 내역과 실제 제공 상품 대조
+train-0365,store-alpha,delivery,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-0366,store-beta,counter,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0367,store-gamma,phone,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0368,store-delta,mobile_order,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0369,store-alpha,staff_app,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,medium,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0370,store-beta,delivery,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-0371,store-gamma,counter,냉장 진열대 온도가 9도로 올라 상품 상태 점검이 필요합니다. 운영자는 처리 상태를 기록해야 합니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0372,store-delta,phone,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0373,store-alpha,mobile_order,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-0374,store-beta,staff_app,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,low,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0375,store-gamma,delivery,픽업존 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0376,store-delta,counter,입구 창고 재고와 POS 재고 수량이 일치하지 않습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,inventory,high,neutral,true,대체 상품 안내
+train-0377,store-alpha,phone,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0378,store-beta,mobile_order,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0379,store-gamma,staff_app,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0380,store-delta,delivery,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0381,store-alpha,counter,픽업존 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다. 운영자는 처리 상태를 기록해야 합니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-0382,store-beta,phone,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0383,store-gamma,mobile_order,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-0384,store-delta,staff_app,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0385,store-alpha,delivery,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0386,store-beta,counter,카운터 주문이 29분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0387,store-gamma,phone,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0388,store-delta,mobile_order,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-0389,store-alpha,staff_app,직원이 창고 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,low,neutral,true,마감 체크리스트에 반영
+train-0390,store-beta,delivery,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0391,store-gamma,counter,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0392,store-delta,phone,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0393,store-alpha,mobile_order,모바일 주문에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0394,store-beta,staff_app,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,high,negative,true,예상 대기 시간 안내
+train-0395,store-gamma,delivery,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0396,store-delta,counter,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0397,store-alpha,phone,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,low,neutral,false,마감 체크리스트에 반영
+train-0398,store-beta,mobile_order,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,low,negative,true,매장 환경 점검
+train-0399,store-gamma,staff_app,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0400,store-delta,delivery,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,high,neutral,true,대체 상품 안내
+train-0401,store-alpha,counter,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다. 운영자는 처리 상태를 기록해야 합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0402,store-beta,phone,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0403,store-gamma,mobile_order,냉장 진열대 온도가 14도로 올라 상품 상태 점검이 필요합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0404,store-delta,staff_app,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0405,store-alpha,delivery,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-0406,store-beta,counter,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,complaint,medium,negative,true,매장 환경 점검
+train-0407,store-gamma,phone,창고 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,medium,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0408,store-delta,mobile_order,진열대 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0409,store-alpha,staff_app,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0410,store-beta,delivery,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0411,store-gamma,counter,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다. 운영자는 처리 상태를 기록해야 합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0412,store-delta,phone,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,medium,negative,true,주문 내역과 실제 제공 상품 대조
+train-0413,store-alpha,mobile_order,창고 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-0414,store-beta,staff_app,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0415,store-gamma,delivery,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0416,store-delta,counter,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0417,store-alpha,phone,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,medium,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0418,store-beta,mobile_order,모바일 주문 주문이 33분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-0419,store-gamma,staff_app,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,high,negative,true,온도와 포장 상태 점검
+train-0420,store-delta,delivery,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0421,store-alpha,counter,직원이 카운터 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-0422,store-beta,phone,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,low,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0423,store-gamma,mobile_order,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0424,store-delta,staff_app,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,high,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0425,store-alpha,delivery,배달에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0426,store-beta,counter,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0427,store-gamma,phone,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0428,store-delta,mobile_order,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0429,store-alpha,staff_app,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,medium,neutral,true,마감 체크리스트에 반영
+train-0430,store-beta,delivery,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0431,store-gamma,counter,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다. 운영자는 처리 상태를 기록해야 합니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-0432,store-delta,phone,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0433,store-alpha,mobile_order,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0434,store-beta,staff_app,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0435,store-gamma,delivery,냉장 진열대 온도가 10도로 올라 상품 상태 점검이 필요합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0436,store-delta,counter,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-0437,store-alpha,phone,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,low,neutral,true,마감 체크리스트에 반영
+train-0438,store-beta,mobile_order,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0439,store-gamma,staff_app,카운터 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0440,store-delta,delivery,주방 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0441,store-alpha,counter,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다. 운영자는 처리 상태를 기록해야 합니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0442,store-beta,phone,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,high,negative,true,예상 대기 시간 안내
+train-0443,store-gamma,mobile_order,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0444,store-delta,staff_app,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0445,store-alpha,delivery,카운터 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-0446,store-beta,counter,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,low,negative,true,매장 환경 점검
+train-0447,store-gamma,phone,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0448,store-delta,mobile_order,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,high,neutral,true,대체 상품 안내
+train-0449,store-alpha,staff_app,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0450,store-beta,delivery,배달 주문이 9분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0451,store-gamma,counter,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0452,store-delta,phone,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0453,store-alpha,mobile_order,직원이 픽업존 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-0454,store-beta,staff_app,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0455,store-gamma,delivery,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-0456,store-delta,counter,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0457,store-alpha,phone,전화 문의에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0458,store-beta,mobile_order,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0459,store-gamma,staff_app,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0460,store-delta,delivery,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-0461,store-alpha,counter,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다. 운영자는 처리 상태를 기록해야 합니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-0462,store-beta,phone,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0463,store-gamma,mobile_order,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0464,store-delta,staff_app,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0465,store-alpha,delivery,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0466,store-beta,counter,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-0467,store-gamma,phone,냉장 진열대 온도가 15도로 올라 상품 상태 점검이 필요합니다.,quality,high,negative,true,온도와 포장 상태 점검
+train-0468,store-delta,mobile_order,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0469,store-alpha,staff_app,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,low,neutral,false,마감 체크리스트에 반영
+train-0470,store-beta,delivery,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,low,negative,true,매장 환경 점검
+train-0471,store-gamma,counter,픽업존 통로에 박스가 쌓여 이동 동선이 막혔습니다. 운영자는 처리 상태를 기록해야 합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0472,store-delta,phone,입구 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,high,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0473,store-alpha,mobile_order,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0474,store-beta,staff_app,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0475,store-gamma,delivery,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0476,store-delta,counter,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0477,store-alpha,phone,픽업존 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,medium,neutral,true,마감 체크리스트에 반영
+train-0478,store-beta,mobile_order,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0479,store-gamma,staff_app,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,medium,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0480,store-delta,delivery,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0481,store-alpha,counter,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0482,store-beta,phone,전화 문의 주문이 13분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0483,store-gamma,mobile_order,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0484,store-delta,staff_app,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,medium,negative,true,주문 내역과 실제 제공 상품 대조
+train-0485,store-alpha,delivery,직원이 창고 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-0486,store-beta,counter,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0487,store-gamma,phone,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0488,store-delta,mobile_order,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0489,store-alpha,staff_app,직원 앱에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,medium,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0490,store-beta,delivery,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-0491,store-gamma,counter,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다. 운영자는 처리 상태를 기록해야 합니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0492,store-delta,phone,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0493,store-alpha,mobile_order,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-0494,store-beta,staff_app,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,low,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0495,store-gamma,delivery,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0496,store-delta,counter,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,inventory,high,neutral,true,대체 상품 안내
+train-0497,store-alpha,phone,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0498,store-beta,mobile_order,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0499,store-gamma,staff_app,냉장 진열대 온도가 11도로 올라 상품 상태 점검이 필요합니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0500,store-delta,delivery,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0501,store-alpha,counter,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다. 운영자는 처리 상태를 기록해야 합니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-0502,store-beta,phone,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0503,store-gamma,mobile_order,창고 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-0504,store-delta,staff_app,진열대 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0505,store-alpha,delivery,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0506,store-beta,counter,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0507,store-gamma,phone,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0508,store-delta,mobile_order,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-0509,store-alpha,staff_app,창고 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,low,neutral,true,마감 체크리스트에 반영
+train-0510,store-beta,delivery,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0511,store-gamma,counter,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0512,store-delta,phone,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0513,store-alpha,mobile_order,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0514,store-beta,staff_app,직원 앱 주문이 17분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,high,negative,true,예상 대기 시간 안내
+train-0515,store-gamma,delivery,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0516,store-delta,counter,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0517,store-alpha,phone,직원이 카운터 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,low,neutral,false,마감 체크리스트에 반영
+train-0518,store-beta,mobile_order,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,low,negative,true,매장 환경 점검
+train-0519,store-gamma,staff_app,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0520,store-delta,delivery,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,high,neutral,true,대체 상품 안내
+train-0521,store-alpha,counter,카운터에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다. 운영자는 처리 상태를 기록해야 합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0522,store-beta,phone,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0523,store-gamma,mobile_order,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0524,store-delta,staff_app,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0525,store-alpha,delivery,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-0526,store-beta,counter,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,complaint,medium,negative,true,매장 환경 점검
+train-0527,store-gamma,phone,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,medium,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0528,store-delta,mobile_order,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0529,store-alpha,staff_app,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0530,store-beta,delivery,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0531,store-gamma,counter,냉장 진열대 온도가 16도로 올라 상품 상태 점검이 필요합니다. 운영자는 처리 상태를 기록해야 합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0532,store-delta,phone,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,medium,negative,true,주문 내역과 실제 제공 상품 대조
+train-0533,store-alpha,mobile_order,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-0534,store-beta,staff_app,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0535,store-gamma,delivery,카운터 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0536,store-delta,counter,주방 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0537,store-alpha,phone,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,medium,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0538,store-beta,mobile_order,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-0539,store-gamma,staff_app,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,high,negative,true,온도와 포장 상태 점검
+train-0540,store-delta,delivery,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0541,store-alpha,counter,카운터 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-0542,store-beta,phone,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,low,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0543,store-gamma,mobile_order,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0544,store-delta,staff_app,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,high,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0545,store-alpha,delivery,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0546,store-beta,counter,카운터 주문이 21분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0547,store-gamma,phone,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0548,store-delta,mobile_order,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0549,store-alpha,staff_app,직원이 픽업존 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,medium,neutral,true,마감 체크리스트에 반영
+train-0550,store-beta,delivery,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0551,store-gamma,counter,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다. 운영자는 처리 상태를 기록해야 합니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-0552,store-delta,phone,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0553,store-alpha,mobile_order,모바일 주문에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0554,store-beta,staff_app,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0555,store-gamma,delivery,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0556,store-delta,counter,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-0557,store-alpha,phone,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,low,neutral,true,마감 체크리스트에 반영
+train-0558,store-beta,mobile_order,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0559,store-gamma,staff_app,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0560,store-delta,delivery,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0561,store-alpha,counter,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다. 운영자는 처리 상태를 기록해야 합니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0562,store-beta,phone,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,high,negative,true,예상 대기 시간 안내
+train-0563,store-gamma,mobile_order,냉장 진열대 온도가 12도로 올라 상품 상태 점검이 필요합니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0564,store-delta,staff_app,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0565,store-alpha,delivery,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-0566,store-beta,counter,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,low,negative,true,매장 환경 점검
+train-0567,store-gamma,phone,픽업존 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0568,store-delta,mobile_order,입구 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,high,neutral,true,대체 상품 안내
+train-0569,store-alpha,staff_app,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0570,store-beta,delivery,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0571,store-gamma,counter,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0572,store-delta,phone,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0573,store-alpha,mobile_order,픽업존 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-0574,store-beta,staff_app,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0575,store-gamma,delivery,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-0576,store-delta,counter,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0577,store-alpha,phone,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0578,store-beta,mobile_order,모바일 주문 주문이 25분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0579,store-gamma,staff_app,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0580,store-delta,delivery,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-0581,store-alpha,counter,직원이 창고 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다. 운영자는 처리 상태를 기록해야 합니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-0582,store-beta,phone,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0583,store-gamma,mobile_order,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0584,store-delta,staff_app,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0585,store-alpha,delivery,배달에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0586,store-beta,counter,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-0587,store-gamma,phone,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,high,negative,true,온도와 포장 상태 점검
+train-0588,store-delta,mobile_order,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0589,store-alpha,staff_app,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,low,neutral,false,마감 체크리스트에 반영
+train-0590,store-beta,delivery,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,low,negative,true,매장 환경 점검
+train-0591,store-gamma,counter,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다. 운영자는 처리 상태를 기록해야 합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0592,store-delta,phone,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,high,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0593,store-alpha,mobile_order,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0594,store-beta,staff_app,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0595,store-gamma,delivery,냉장 진열대 온도가 8도로 올라 상품 상태 점검이 필요합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0596,store-delta,counter,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0597,store-alpha,phone,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,medium,neutral,true,마감 체크리스트에 반영
+train-0598,store-beta,mobile_order,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0599,store-gamma,staff_app,창고 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,medium,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0600,store-delta,delivery,진열대 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0601,store-alpha,counter,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0602,store-beta,phone,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0603,store-gamma,mobile_order,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0604,store-delta,staff_app,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,medium,negative,true,주문 내역과 실제 제공 상품 대조
+train-0605,store-alpha,delivery,창고 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-0606,store-beta,counter,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0607,store-gamma,phone,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0608,store-delta,mobile_order,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0609,store-alpha,staff_app,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,medium,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0610,store-beta,delivery,배달 주문이 29분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-0611,store-gamma,counter,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다. 운영자는 처리 상태를 기록해야 합니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0612,store-delta,phone,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0613,store-alpha,mobile_order,직원이 카운터 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-0614,store-beta,staff_app,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,low,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0615,store-gamma,delivery,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0616,store-delta,counter,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,inventory,high,neutral,true,대체 상품 안내
+train-0617,store-alpha,phone,전화 문의에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0618,store-beta,mobile_order,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0619,store-gamma,staff_app,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0620,store-delta,delivery,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0621,store-alpha,counter,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다. 운영자는 처리 상태를 기록해야 합니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-0622,store-beta,phone,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0623,store-gamma,mobile_order,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-0624,store-delta,staff_app,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0625,store-alpha,delivery,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0626,store-beta,counter,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0627,store-gamma,phone,냉장 진열대 온도가 13도로 올라 상품 상태 점검이 필요합니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0628,store-delta,mobile_order,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-0629,store-alpha,staff_app,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,low,neutral,true,마감 체크리스트에 반영
+train-0630,store-beta,delivery,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0631,store-gamma,counter,카운터 통로에 박스가 쌓여 이동 동선이 막혔습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0632,store-delta,phone,주방 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0633,store-alpha,mobile_order,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0634,store-beta,staff_app,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,high,negative,true,예상 대기 시간 안내
+train-0635,store-gamma,delivery,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0636,store-delta,counter,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0637,store-alpha,phone,카운터 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,low,neutral,false,마감 체크리스트에 반영
+train-0638,store-beta,mobile_order,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,low,negative,true,매장 환경 점검
+train-0639,store-gamma,staff_app,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0640,store-delta,delivery,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,high,neutral,true,대체 상품 안내
+train-0641,store-alpha,counter,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다. 운영자는 처리 상태를 기록해야 합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0642,store-beta,phone,전화 문의 주문이 33분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0643,store-gamma,mobile_order,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0644,store-delta,staff_app,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0645,store-alpha,delivery,직원이 픽업존 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-0646,store-beta,counter,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,complaint,medium,negative,true,매장 환경 점검
+train-0647,store-gamma,phone,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,medium,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0648,store-delta,mobile_order,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0649,store-alpha,staff_app,직원 앱에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0650,store-beta,delivery,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0651,store-gamma,counter,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다. 운영자는 처리 상태를 기록해야 합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0652,store-delta,phone,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,medium,negative,true,주문 내역과 실제 제공 상품 대조
+train-0653,store-alpha,mobile_order,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-0654,store-beta,staff_app,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0655,store-gamma,delivery,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0656,store-delta,counter,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0657,store-alpha,phone,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,medium,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0658,store-beta,mobile_order,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-0659,store-gamma,staff_app,냉장 진열대 온도가 9도로 올라 상품 상태 점검이 필요합니다.,quality,high,negative,true,온도와 포장 상태 점검
+train-0660,store-delta,delivery,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0661,store-alpha,counter,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-0662,store-beta,phone,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,low,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0663,store-gamma,mobile_order,픽업존 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0664,store-delta,staff_app,입구 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,high,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0665,store-alpha,delivery,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0666,store-beta,counter,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0667,store-gamma,phone,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0668,store-delta,mobile_order,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0669,store-alpha,staff_app,픽업존 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,medium,neutral,true,마감 체크리스트에 반영
+train-0670,store-beta,delivery,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0671,store-gamma,counter,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다. 운영자는 처리 상태를 기록해야 합니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-0672,store-delta,phone,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0673,store-alpha,mobile_order,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0674,store-beta,staff_app,직원 앱 주문이 9분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0675,store-gamma,delivery,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0676,store-delta,counter,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-0677,store-alpha,phone,직원이 창고 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,low,neutral,true,마감 체크리스트에 반영
+train-0678,store-beta,mobile_order,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0679,store-gamma,staff_app,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0680,store-delta,delivery,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0681,store-alpha,counter,카운터에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다. 운영자는 처리 상태를 기록해야 합니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0682,store-beta,phone,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,high,negative,true,예상 대기 시간 안내
+train-0683,store-gamma,mobile_order,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0684,store-delta,staff_app,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0685,store-alpha,delivery,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-0686,store-beta,counter,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,low,negative,true,매장 환경 점검
+train-0687,store-gamma,phone,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0688,store-delta,mobile_order,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,high,neutral,true,대체 상품 안내
+train-0689,store-alpha,staff_app,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0690,store-beta,delivery,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0691,store-gamma,counter,냉장 진열대 온도가 14도로 올라 상품 상태 점검이 필요합니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0692,store-delta,phone,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0693,store-alpha,mobile_order,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-0694,store-beta,staff_app,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0695,store-gamma,delivery,창고 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-0696,store-delta,counter,진열대 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0697,store-alpha,phone,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0698,store-beta,mobile_order,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0699,store-gamma,staff_app,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0700,store-delta,delivery,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-0701,store-alpha,counter,창고 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다. 운영자는 처리 상태를 기록해야 합니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-0702,store-beta,phone,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0703,store-gamma,mobile_order,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0704,store-delta,staff_app,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0705,store-alpha,delivery,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0706,store-beta,counter,카운터 주문이 13분 이상 지연되어 고객이 픽업 시간을 문의했습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-0707,store-gamma,phone,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,high,negative,true,온도와 포장 상태 점검
+train-0708,store-delta,mobile_order,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0709,store-alpha,staff_app,직원이 카운터 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,low,neutral,false,마감 체크리스트에 반영
+train-0710,store-beta,delivery,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,low,negative,true,매장 환경 점검
+train-0711,store-gamma,counter,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다. 운영자는 처리 상태를 기록해야 합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0712,store-delta,phone,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,high,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0713,store-alpha,mobile_order,모바일 주문에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0714,store-beta,staff_app,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0715,store-gamma,delivery,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0716,store-delta,counter,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0717,store-alpha,phone,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,medium,neutral,true,마감 체크리스트에 반영
+train-0718,store-beta,mobile_order,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0719,store-gamma,staff_app,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,medium,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0720,store-delta,delivery,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0721,store-alpha,counter,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0722,store-beta,phone,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0723,store-gamma,mobile_order,냉장 진열대 온도가 10도로 올라 상품 상태 점검이 필요합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0724,store-delta,staff_app,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,medium,negative,true,주문 내역과 실제 제공 상품 대조
+train-0725,store-alpha,delivery,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-0726,store-beta,counter,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0727,store-gamma,phone,카운터 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0728,store-delta,mobile_order,주방 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0729,store-alpha,staff_app,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,medium,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0730,store-beta,delivery,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-0731,store-gamma,counter,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다. 운영자는 처리 상태를 기록해야 합니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0732,store-delta,phone,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0733,store-alpha,mobile_order,카운터 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-0734,store-beta,staff_app,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,low,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0735,store-gamma,delivery,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0736,store-delta,counter,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,inventory,high,neutral,true,대체 상품 안내
+train-0737,store-alpha,phone,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0738,store-beta,mobile_order,모바일 주문 주문이 17분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0739,store-gamma,staff_app,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0740,store-delta,delivery,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0741,store-alpha,counter,직원이 픽업존 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다. 운영자는 처리 상태를 기록해야 합니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-0742,store-beta,phone,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0743,store-gamma,mobile_order,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-0744,store-delta,staff_app,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0745,store-alpha,delivery,배달에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0746,store-beta,counter,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0747,store-gamma,phone,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0748,store-delta,mobile_order,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-0749,store-alpha,staff_app,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,low,neutral,true,마감 체크리스트에 반영
+train-0750,store-beta,delivery,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0751,store-gamma,counter,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0752,store-delta,phone,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0753,store-alpha,mobile_order,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0754,store-beta,staff_app,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,high,negative,true,예상 대기 시간 안내
+train-0755,store-gamma,delivery,냉장 진열대 온도가 15도로 올라 상품 상태 점검이 필요합니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0756,store-delta,counter,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0757,store-alpha,phone,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,low,neutral,false,마감 체크리스트에 반영
+train-0758,store-beta,mobile_order,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,low,negative,true,매장 환경 점검
+train-0759,store-gamma,staff_app,픽업존 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0760,store-delta,delivery,입구 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,high,neutral,true,대체 상품 안내
+train-0761,store-alpha,counter,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다. 운영자는 처리 상태를 기록해야 합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0762,store-beta,phone,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0763,store-gamma,mobile_order,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0764,store-delta,staff_app,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0765,store-alpha,delivery,픽업존 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-0766,store-beta,counter,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,complaint,medium,negative,true,매장 환경 점검
+train-0767,store-gamma,phone,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,medium,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0768,store-delta,mobile_order,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0769,store-alpha,staff_app,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0770,store-beta,delivery,배달 주문이 21분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0771,store-gamma,counter,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다. 운영자는 처리 상태를 기록해야 합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0772,store-delta,phone,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,medium,negative,true,주문 내역과 실제 제공 상품 대조
+train-0773,store-alpha,mobile_order,직원이 창고 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-0774,store-beta,staff_app,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0775,store-gamma,delivery,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0776,store-delta,counter,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0777,store-alpha,phone,전화 문의에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,medium,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0778,store-beta,mobile_order,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-0779,store-gamma,staff_app,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,high,negative,true,온도와 포장 상태 점검
+train-0780,store-delta,delivery,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0781,store-alpha,counter,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-0782,store-beta,phone,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,low,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0783,store-gamma,mobile_order,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0784,store-delta,staff_app,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,high,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0785,store-alpha,delivery,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0786,store-beta,counter,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0787,store-gamma,phone,냉장 진열대 온도가 11도로 올라 상품 상태 점검이 필요합니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0788,store-delta,mobile_order,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0789,store-alpha,staff_app,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,medium,neutral,true,마감 체크리스트에 반영
+train-0790,store-beta,delivery,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0791,store-gamma,counter,창고 통로에 박스가 쌓여 이동 동선이 막혔습니다. 운영자는 처리 상태를 기록해야 합니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-0792,store-delta,phone,진열대 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0793,store-alpha,mobile_order,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0794,store-beta,staff_app,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0795,store-gamma,delivery,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0796,store-delta,counter,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-0797,store-alpha,phone,창고 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,low,neutral,true,마감 체크리스트에 반영
+train-0798,store-beta,mobile_order,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0799,store-gamma,staff_app,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0800,store-delta,delivery,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0801,store-alpha,counter,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다. 운영자는 처리 상태를 기록해야 합니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0802,store-beta,phone,전화 문의 주문이 25분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,high,negative,true,예상 대기 시간 안내
+train-0803,store-gamma,mobile_order,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0804,store-delta,staff_app,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0805,store-alpha,delivery,직원이 카운터 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-0806,store-beta,counter,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,low,negative,true,매장 환경 점검
+train-0807,store-gamma,phone,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0808,store-delta,mobile_order,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,high,neutral,true,대체 상품 안내
+train-0809,store-alpha,staff_app,직원 앱에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0810,store-beta,delivery,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0811,store-gamma,counter,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0812,store-delta,phone,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0813,store-alpha,mobile_order,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-0814,store-beta,staff_app,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0815,store-gamma,delivery,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-0816,store-delta,counter,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0817,store-alpha,phone,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0818,store-beta,mobile_order,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0819,store-gamma,staff_app,냉장 진열대 온도가 16도로 올라 상품 상태 점검이 필요합니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0820,store-delta,delivery,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-0821,store-alpha,counter,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다. 운영자는 처리 상태를 기록해야 합니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-0822,store-beta,phone,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0823,store-gamma,mobile_order,카운터 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0824,store-delta,staff_app,주방 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0825,store-alpha,delivery,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0826,store-beta,counter,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-0827,store-gamma,phone,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,high,negative,true,온도와 포장 상태 점검
+train-0828,store-delta,mobile_order,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0829,store-alpha,staff_app,카운터 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,low,neutral,false,마감 체크리스트에 반영
+train-0830,store-beta,delivery,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,low,negative,true,매장 환경 점검
+train-0831,store-gamma,counter,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다. 운영자는 처리 상태를 기록해야 합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0832,store-delta,phone,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,high,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0833,store-alpha,mobile_order,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0834,store-beta,staff_app,직원 앱 주문이 29분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0835,store-gamma,delivery,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0836,store-delta,counter,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0837,store-alpha,phone,직원이 픽업존 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,medium,neutral,true,마감 체크리스트에 반영
+train-0838,store-beta,mobile_order,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0839,store-gamma,staff_app,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,medium,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0840,store-delta,delivery,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0841,store-alpha,counter,카운터에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0842,store-beta,phone,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0843,store-gamma,mobile_order,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0844,store-delta,staff_app,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,medium,negative,true,주문 내역과 실제 제공 상품 대조
+train-0845,store-alpha,delivery,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-0846,store-beta,counter,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0847,store-gamma,phone,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0848,store-delta,mobile_order,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0849,store-alpha,staff_app,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,medium,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0850,store-beta,delivery,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-0851,store-gamma,counter,냉장 진열대 온도가 12도로 올라 상품 상태 점검이 필요합니다. 운영자는 처리 상태를 기록해야 합니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0852,store-delta,phone,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0853,store-alpha,mobile_order,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-0854,store-beta,staff_app,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,low,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0855,store-gamma,delivery,픽업존 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0856,store-delta,counter,입구 창고 재고와 POS 재고 수량이 일치하지 않습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,inventory,high,neutral,true,대체 상품 안내
+train-0857,store-alpha,phone,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0858,store-beta,mobile_order,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0859,store-gamma,staff_app,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0860,store-delta,delivery,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0861,store-alpha,counter,픽업존 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다. 운영자는 처리 상태를 기록해야 합니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-0862,store-beta,phone,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0863,store-gamma,mobile_order,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-0864,store-delta,staff_app,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0865,store-alpha,delivery,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0866,store-beta,counter,카운터 주문이 33분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0867,store-gamma,phone,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0868,store-delta,mobile_order,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-0869,store-alpha,staff_app,직원이 창고 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,low,neutral,true,마감 체크리스트에 반영
+train-0870,store-beta,delivery,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0871,store-gamma,counter,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0872,store-delta,phone,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0873,store-alpha,mobile_order,모바일 주문에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0874,store-beta,staff_app,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,high,negative,true,예상 대기 시간 안내
+train-0875,store-gamma,delivery,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0876,store-delta,counter,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0877,store-alpha,phone,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,low,neutral,false,마감 체크리스트에 반영
+train-0878,store-beta,mobile_order,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,low,negative,true,매장 환경 점검
+train-0879,store-gamma,staff_app,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0880,store-delta,delivery,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,high,neutral,true,대체 상품 안내
+train-0881,store-alpha,counter,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다. 운영자는 처리 상태를 기록해야 합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0882,store-beta,phone,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0883,store-gamma,mobile_order,냉장 진열대 온도가 8도로 올라 상품 상태 점검이 필요합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0884,store-delta,staff_app,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0885,store-alpha,delivery,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-0886,store-beta,counter,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,complaint,medium,negative,true,매장 환경 점검
+train-0887,store-gamma,phone,창고 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,medium,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0888,store-delta,mobile_order,진열대 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0889,store-alpha,staff_app,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0890,store-beta,delivery,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0891,store-gamma,counter,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다. 운영자는 처리 상태를 기록해야 합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0892,store-delta,phone,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,medium,negative,true,주문 내역과 실제 제공 상품 대조
+train-0893,store-alpha,mobile_order,창고 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-0894,store-beta,staff_app,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0895,store-gamma,delivery,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0896,store-delta,counter,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0897,store-alpha,phone,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,medium,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0898,store-beta,mobile_order,모바일 주문 주문이 9분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-0899,store-gamma,staff_app,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,high,negative,true,온도와 포장 상태 점검
+train-0900,store-delta,delivery,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0901,store-alpha,counter,직원이 카운터 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-0902,store-beta,phone,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,low,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0903,store-gamma,mobile_order,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0904,store-delta,staff_app,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,high,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0905,store-alpha,delivery,배달에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0906,store-beta,counter,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0907,store-gamma,phone,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0908,store-delta,mobile_order,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0909,store-alpha,staff_app,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,medium,neutral,true,마감 체크리스트에 반영
+train-0910,store-beta,delivery,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0911,store-gamma,counter,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다. 운영자는 처리 상태를 기록해야 합니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-0912,store-delta,phone,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0913,store-alpha,mobile_order,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0914,store-beta,staff_app,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0915,store-gamma,delivery,냉장 진열대 온도가 13도로 올라 상품 상태 점검이 필요합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0916,store-delta,counter,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-0917,store-alpha,phone,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,low,neutral,true,마감 체크리스트에 반영
+train-0918,store-beta,mobile_order,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0919,store-gamma,staff_app,카운터 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0920,store-delta,delivery,주방 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0921,store-alpha,counter,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다. 운영자는 처리 상태를 기록해야 합니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0922,store-beta,phone,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,high,negative,true,예상 대기 시간 안내
+train-0923,store-gamma,mobile_order,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0924,store-delta,staff_app,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0925,store-alpha,delivery,카운터 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-0926,store-beta,counter,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,low,negative,true,매장 환경 점검
+train-0927,store-gamma,phone,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0928,store-delta,mobile_order,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,high,neutral,true,대체 상품 안내
+train-0929,store-alpha,staff_app,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0930,store-beta,delivery,배달 주문이 13분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0931,store-gamma,counter,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0932,store-delta,phone,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0933,store-alpha,mobile_order,직원이 픽업존 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-0934,store-beta,staff_app,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0935,store-gamma,delivery,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-0936,store-delta,counter,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0937,store-alpha,phone,전화 문의에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0938,store-beta,mobile_order,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0939,store-gamma,staff_app,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0940,store-delta,delivery,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-0941,store-alpha,counter,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다. 운영자는 처리 상태를 기록해야 합니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-0942,store-beta,phone,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0943,store-gamma,mobile_order,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0944,store-delta,staff_app,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0945,store-alpha,delivery,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0946,store-beta,counter,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-0947,store-gamma,phone,냉장 진열대 온도가 9도로 올라 상품 상태 점검이 필요합니다.,quality,high,negative,true,온도와 포장 상태 점검
+train-0948,store-delta,mobile_order,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0949,store-alpha,staff_app,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,low,neutral,false,마감 체크리스트에 반영
+train-0950,store-beta,delivery,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,low,negative,true,매장 환경 점검
+train-0951,store-gamma,counter,픽업존 통로에 박스가 쌓여 이동 동선이 막혔습니다. 운영자는 처리 상태를 기록해야 합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0952,store-delta,phone,입구 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,high,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0953,store-alpha,mobile_order,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0954,store-beta,staff_app,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0955,store-gamma,delivery,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0956,store-delta,counter,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0957,store-alpha,phone,픽업존 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,medium,neutral,true,마감 체크리스트에 반영
+train-0958,store-beta,mobile_order,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0959,store-gamma,staff_app,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,medium,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0960,store-delta,delivery,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0961,store-alpha,counter,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0962,store-beta,phone,전화 문의 주문이 17분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-0963,store-gamma,mobile_order,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0964,store-delta,staff_app,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,medium,negative,true,주문 내역과 실제 제공 상품 대조
+train-0965,store-alpha,delivery,직원이 창고 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-0966,store-beta,counter,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0967,store-gamma,phone,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-0968,store-delta,mobile_order,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-0969,store-alpha,staff_app,직원 앱에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,medium,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0970,store-beta,delivery,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-0971,store-gamma,counter,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다. 운영자는 처리 상태를 기록해야 합니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0972,store-delta,phone,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-0973,store-alpha,mobile_order,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-0974,store-beta,staff_app,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,low,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0975,store-gamma,delivery,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0976,store-delta,counter,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,inventory,high,neutral,true,대체 상품 안내
+train-0977,store-alpha,phone,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-0978,store-beta,mobile_order,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0979,store-gamma,staff_app,냉장 진열대 온도가 14도로 올라 상품 상태 점검이 필요합니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0980,store-delta,delivery,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0981,store-alpha,counter,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다. 운영자는 처리 상태를 기록해야 합니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-0982,store-beta,phone,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-0983,store-gamma,mobile_order,창고 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-0984,store-delta,staff_app,진열대 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0985,store-alpha,delivery,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0986,store-beta,counter,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-0987,store-gamma,phone,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-0988,store-delta,mobile_order,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-0989,store-alpha,staff_app,창고 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,low,neutral,true,마감 체크리스트에 반영
+train-0990,store-beta,delivery,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-0991,store-gamma,counter,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-0992,store-delta,phone,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-0993,store-alpha,mobile_order,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-0994,store-beta,staff_app,직원 앱 주문이 21분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,high,negative,true,예상 대기 시간 안내
+train-0995,store-gamma,delivery,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-0996,store-delta,counter,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-0997,store-alpha,phone,직원이 카운터 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,low,neutral,false,마감 체크리스트에 반영
+train-0998,store-beta,mobile_order,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,low,negative,true,매장 환경 점검
+train-0999,store-gamma,staff_app,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-1000,store-delta,delivery,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,high,neutral,true,대체 상품 안내
+train-1001,store-alpha,counter,카운터에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다. 운영자는 처리 상태를 기록해야 합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-1002,store-beta,phone,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-1003,store-gamma,mobile_order,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-1004,store-delta,staff_app,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-1005,store-alpha,delivery,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-1006,store-beta,counter,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,complaint,medium,negative,true,매장 환경 점검
+train-1007,store-gamma,phone,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,medium,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-1008,store-delta,mobile_order,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,medium,neutral,true,대체 상품 안내
+train-1009,store-alpha,staff_app,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-1010,store-beta,delivery,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-1011,store-gamma,counter,냉장 진열대 온도가 10도로 올라 상품 상태 점검이 필요합니다. 운영자는 처리 상태를 기록해야 합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-1012,store-delta,phone,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,medium,negative,true,주문 내역과 실제 제공 상품 대조
+train-1013,store-alpha,mobile_order,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-1014,store-beta,staff_app,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-1015,store-gamma,delivery,카운터 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-1016,store-delta,counter,주방 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-1017,store-alpha,phone,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,medium,negative,true,주문 번호 확인 후 취소 상태 확인
+train-1018,store-beta,mobile_order,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-1019,store-gamma,staff_app,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,high,negative,true,온도와 포장 상태 점검
+train-1020,store-delta,delivery,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-1021,store-alpha,counter,카운터 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-1022,store-beta,phone,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,low,negative,true,고객 불편 내용 확인 후 응대 기록
+train-1023,store-gamma,mobile_order,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-1024,store-delta,staff_app,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,high,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-1025,store-alpha,delivery,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-1026,store-beta,counter,카운터 주문이 25분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-1027,store-gamma,phone,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-1028,store-delta,mobile_order,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-1029,store-alpha,staff_app,직원이 픽업존 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,medium,neutral,true,마감 체크리스트에 반영
+train-1030,store-beta,delivery,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-1031,store-gamma,counter,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다. 운영자는 처리 상태를 기록해야 합니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-1032,store-delta,phone,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-1033,store-alpha,mobile_order,모바일 주문에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-1034,store-beta,staff_app,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-1035,store-gamma,delivery,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-1036,store-delta,counter,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-1037,store-alpha,phone,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,low,neutral,true,마감 체크리스트에 반영
+train-1038,store-beta,mobile_order,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-1039,store-gamma,staff_app,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-1040,store-delta,delivery,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,medium,neutral,true,대체 상품 안내
+train-1041,store-alpha,counter,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다. 운영자는 처리 상태를 기록해야 합니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-1042,store-beta,phone,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,high,negative,true,예상 대기 시간 안내
+train-1043,store-gamma,mobile_order,냉장 진열대 온도가 15도로 올라 상품 상태 점검이 필요합니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-1044,store-delta,staff_app,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-1045,store-alpha,delivery,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-1046,store-beta,counter,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,low,negative,true,매장 환경 점검
+train-1047,store-gamma,phone,픽업존 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-1048,store-delta,mobile_order,입구 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,high,neutral,true,대체 상품 안내
+train-1049,store-alpha,staff_app,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-1050,store-beta,delivery,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-1051,store-gamma,counter,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-1052,store-delta,phone,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-1053,store-alpha,mobile_order,픽업존 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-1054,store-beta,staff_app,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-1055,store-gamma,delivery,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-1056,store-delta,counter,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-1057,store-alpha,phone,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-1058,store-beta,mobile_order,모바일 주문 주문이 29분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-1059,store-gamma,staff_app,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-1060,store-delta,delivery,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-1061,store-alpha,counter,직원이 창고 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다. 운영자는 처리 상태를 기록해야 합니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-1062,store-beta,phone,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-1063,store-gamma,mobile_order,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-1064,store-delta,staff_app,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-1065,store-alpha,delivery,배달에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-1066,store-beta,counter,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-1067,store-gamma,phone,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,high,negative,true,온도와 포장 상태 점검
+train-1068,store-delta,mobile_order,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-1069,store-alpha,staff_app,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,low,neutral,false,마감 체크리스트에 반영
+train-1070,store-beta,delivery,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,low,negative,true,매장 환경 점검
+train-1071,store-gamma,counter,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다. 운영자는 처리 상태를 기록해야 합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-1072,store-delta,phone,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,high,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-1073,store-alpha,mobile_order,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-1074,store-beta,staff_app,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-1075,store-gamma,delivery,냉장 진열대 온도가 11도로 올라 상품 상태 점검이 필요합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-1076,store-delta,counter,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-1077,store-alpha,phone,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,medium,neutral,true,마감 체크리스트에 반영
+train-1078,store-beta,mobile_order,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-1079,store-gamma,staff_app,창고 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,medium,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-1080,store-delta,delivery,진열대 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-1081,store-alpha,counter,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-1082,store-beta,phone,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-1083,store-gamma,mobile_order,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-1084,store-delta,staff_app,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,medium,negative,true,주문 내역과 실제 제공 상품 대조
+train-1085,store-alpha,delivery,창고 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-1086,store-beta,counter,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-1087,store-gamma,phone,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-1088,store-delta,mobile_order,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-1089,store-alpha,staff_app,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,medium,negative,true,주문 번호 확인 후 취소 상태 확인
+train-1090,store-beta,delivery,배달 주문이 33분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-1091,store-gamma,counter,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다. 운영자는 처리 상태를 기록해야 합니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-1092,store-delta,phone,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-1093,store-alpha,mobile_order,직원이 카운터 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-1094,store-beta,staff_app,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,low,negative,true,고객 불편 내용 확인 후 응대 기록
+train-1095,store-gamma,delivery,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-1096,store-delta,counter,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,inventory,high,neutral,true,대체 상품 안내
+train-1097,store-alpha,phone,전화 문의에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-1098,store-beta,mobile_order,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-1099,store-gamma,staff_app,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-1100,store-delta,delivery,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-1101,store-alpha,counter,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다. 운영자는 처리 상태를 기록해야 합니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-1102,store-beta,phone,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-1103,store-gamma,mobile_order,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-1104,store-delta,staff_app,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-1105,store-alpha,delivery,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-1106,store-beta,counter,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-1107,store-gamma,phone,냉장 진열대 온도가 16도로 올라 상품 상태 점검이 필요합니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-1108,store-delta,mobile_order,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-1109,store-alpha,staff_app,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,low,neutral,true,마감 체크리스트에 반영
+train-1110,store-beta,delivery,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-1111,store-gamma,counter,카운터 통로에 박스가 쌓여 이동 동선이 막혔습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-1112,store-delta,phone,주방 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-1113,store-alpha,mobile_order,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-1114,store-beta,staff_app,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,high,negative,true,예상 대기 시간 안내
+train-1115,store-gamma,delivery,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-1116,store-delta,counter,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-1117,store-alpha,phone,카운터 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,low,neutral,false,마감 체크리스트에 반영
+train-1118,store-beta,mobile_order,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,low,negative,true,매장 환경 점검
+train-1119,store-gamma,staff_app,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-1120,store-delta,delivery,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,high,neutral,true,대체 상품 안내
+train-1121,store-alpha,counter,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다. 운영자는 처리 상태를 기록해야 합니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-1122,store-beta,phone,전화 문의 주문이 9분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-1123,store-gamma,mobile_order,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-1124,store-delta,staff_app,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-1125,store-alpha,delivery,직원이 픽업존 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-1126,store-beta,counter,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,complaint,medium,negative,true,매장 환경 점검
+train-1127,store-gamma,phone,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,medium,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-1128,store-delta,mobile_order,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-1129,store-alpha,staff_app,직원 앱에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-1130,store-beta,delivery,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-1131,store-gamma,counter,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다. 운영자는 처리 상태를 기록해야 합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-1132,store-delta,phone,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,medium,negative,true,주문 내역과 실제 제공 상품 대조
+train-1133,store-alpha,mobile_order,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-1134,store-beta,staff_app,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-1135,store-gamma,delivery,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-1136,store-delta,counter,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,medium,neutral,true,대체 상품 안내
+train-1137,store-alpha,phone,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,medium,negative,true,주문 번호 확인 후 취소 상태 확인
+train-1138,store-beta,mobile_order,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-1139,store-gamma,staff_app,냉장 진열대 온도가 12도로 올라 상품 상태 점검이 필요합니다.,quality,high,negative,true,온도와 포장 상태 점검
+train-1140,store-delta,delivery,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-1141,store-alpha,counter,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-1142,store-beta,phone,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,low,negative,true,고객 불편 내용 확인 후 응대 기록
+train-1143,store-gamma,mobile_order,픽업존 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-1144,store-delta,staff_app,입구 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,high,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-1145,store-alpha,delivery,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-1146,store-beta,counter,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-1147,store-gamma,phone,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-1148,store-delta,mobile_order,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-1149,store-alpha,staff_app,픽업존 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다.,staff_note,medium,neutral,true,마감 체크리스트에 반영
+train-1150,store-beta,delivery,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-1151,store-gamma,counter,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다. 운영자는 처리 상태를 기록해야 합니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-1152,store-delta,phone,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-1153,store-alpha,mobile_order,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-1154,store-beta,staff_app,직원 앱 주문이 13분 이상 지연되어 고객이 픽업 시간을 문의했습니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-1155,store-gamma,delivery,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-1156,store-delta,counter,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-1157,store-alpha,phone,직원이 창고 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,low,neutral,true,마감 체크리스트에 반영
+train-1158,store-beta,mobile_order,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-1159,store-gamma,staff_app,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-1160,store-delta,delivery,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-1161,store-alpha,counter,카운터에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다. 운영자는 처리 상태를 기록해야 합니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-1162,store-beta,phone,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,high,negative,true,예상 대기 시간 안내
+train-1163,store-gamma,mobile_order,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,high,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-1164,store-delta,staff_app,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-1165,store-alpha,delivery,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,low,neutral,false,직원 인수인계 기록 확인
+train-1166,store-beta,counter,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,low,negative,true,매장 환경 점검
+train-1167,store-gamma,phone,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,high,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-1168,store-delta,mobile_order,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,high,neutral,true,대체 상품 안내
+train-1169,store-alpha,staff_app,중복 결제 가능성이 있어 아이스 아메리카노 주문의 환불 가능 여부를 확인해야 합니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-1170,store-beta,delivery,점심 시간 주문이 몰려 대기 시간이 길어졌고 고객이 빠른 안내를 요청했습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-1171,store-gamma,counter,냉장 진열대 온도가 8도로 올라 상품 상태 점검이 필요합니다. 운영자는 처리 상태를 기록해야 합니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-1172,store-delta,phone,영수증에는 세트 메뉴가 표시되지만 고객은 단품만 받았다고 문의했습니다.,order_issue,high,negative,true,주문 내역과 실제 제공 상품 대조
+train-1173,store-alpha,mobile_order,신입 직원이 환불 요청 시 주문 번호와 결제 수단을 먼저 확인해야 하는지 질문했습니다.,staff_note,medium,neutral,true,직원 인수인계 기록 확인
+train-1174,store-beta,staff_app,대기 줄 안내가 명확하지 않아 고객이 순서 문제로 항의했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-1175,store-gamma,delivery,창고 통로에 박스가 쌓여 이동 동선이 막혔습니다.,safety,medium,negative,true,즉시 현장 안전 조치
+train-1176,store-delta,counter,진열대 창고 재고와 POS 재고 수량이 일치하지 않습니다.,inventory,medium,neutral,true,대체 상품 안내
+train-1177,store-alpha,phone,고객이 취소 버튼을 눌렀지만 매장에는 주문이 남아 있어 환불 절차를 문의했습니다.,refund,high,negative,true,주문 번호 확인 후 취소 상태 확인
+train-1178,store-beta,mobile_order,모바일 주문 완료 시간이 지났지만 상품 준비 상태가 바뀌지 않았습니다.,delay,medium,negative,true,지연 원인 확인 후 고객에게 공지
+train-1179,store-gamma,staff_app,고객이 음료 맛이 평소와 다르다고 제조 기준 확인을 요청했습니다.,quality,medium,negative,true,온도와 포장 상태 점검
+train-1180,store-delta,delivery,주문 번호와 픽업 상품이 일치하지 않아 매장 확인이 필요합니다.,order_issue,medium,negative,true,누락 상품 재제공 또는 환불 안내
+train-1181,store-alpha,counter,창고 담당자가 다음 근무자에게 청소 상태를 인수인계했습니다. 운영자는 처리 상태를 기록해야 합니다.,staff_note,low,neutral,true,직원 인수인계 기록 확인
+train-1182,store-beta,phone,매장 입구 안내 문구가 부족해 고객이 이용 방법을 문의했습니다.,complaint,medium,negative,true,고객 불편 내용 확인 후 응대 기록
+train-1183,store-gamma,mobile_order,뜨거운 음료가 쏟아져 화상 위험이 있어 즉시 정리가 필요합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-1184,store-delta,staff_app,모바일 주문에는 판매 가능으로 보이지만 실제 매장에는 샌드위치 재고가 없습니다.,inventory,medium,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-1185,store-alpha,delivery,고객이 아이스 아메리카노 환불 처리가 지연되어 강하게 항의했습니다.,refund,medium,negative,true,결제 내역 확인 후 환불 절차 안내
+train-1186,store-beta,counter,카운터 주문이 17분 이상 지연되어 고객이 픽업 시간을 문의했습니다. 고객 응대 시간이 길어지지 않도록 우선순위 확인이 필요합니다.,delay,high,negative,true,지연 원인 확인 후 고객에게 공지
+train-1187,store-gamma,phone,고객이 샐러드 온도가 기대보다 낮다고 품질 확인을 요청했습니다.,quality,high,negative,true,온도와 포장 상태 점검
+train-1188,store-delta,mobile_order,주문에는 도시락 옵션이 포함되어 있지만 실제 상품에는 반영되지 않았습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-1189,store-alpha,staff_app,직원이 카운터 점검 중 세트 메뉴 재고 수량이 예상보다 적다고 기록했습니다.,staff_note,low,neutral,false,마감 체크리스트에 반영
+train-1190,store-beta,delivery,고객이 매장 음악 소리가 커서 주문 확인이 어렵다고 불만을 제기했습니다.,complaint,low,negative,true,매장 환경 점검
+train-1191,store-gamma,counter,매장 바닥에 음료가 쏟아져 고객이 미끄러질 위험이 있습니다. 운영자는 처리 상태를 기록해야 합니다.,safety,high,negative,true,즉시 현장 안전 조치
+train-1192,store-delta,phone,샌드위치 재고가 부족해 이후 주문 처리에 지연 가능성이 있습니다.,inventory,high,neutral,true,재고 확인 후 발주 또는 품절 안내
+train-1193,store-alpha,mobile_order,모바일 주문에서 결제 취소가 반영되지 않아 고객이 환불 상태 확인을 요청했습니다.,refund,high,negative,true,결제 내역 확인 후 환불 절차 안내
+train-1194,store-beta,staff_app,배달 기사 도착 후에도 디저트 준비가 끝나지 않아 지연 안내가 필요합니다.,delay,medium,negative,true,예상 대기 시간 안내
+train-1195,store-gamma,delivery,포장 상태가 불량해 샐러드 내용물이 새었다는 문의가 들어왔습니다.,quality,medium,negative,true,상품 상태 확인 후 교환 또는 보상 안내
+train-1196,store-delta,counter,배달 주문에서 사이드 메뉴 1개가 누락되어 고객이 빠른 재배송을 요청했습니다.,order_issue,high,negative,true,누락 상품 재제공 또는 환불 안내
+train-1197,store-alpha,phone,마감 근무자가 냉장고 온도 기록표가 비어 있어 확인이 필요하다고 남겼습니다.,staff_note,medium,neutral,true,마감 체크리스트에 반영
+train-1198,store-beta,mobile_order,고객이 직원 안내가 충분하지 않아 다시 설명을 요청했습니다.,complaint,medium,negative,true,매장 환경 점검
+train-1199,store-gamma,staff_app,고객이 입구 근처에서 넘어짐 사고를 겪어 안전 확인이 필요합니다.,safety,medium,negative,true,사고 위험 구역 표시 및 관리자 보고
+train-1200,store-delta,delivery,인기 메뉴 원재료가 예상보다 빨리 소진되어 품절 안내가 필요합니다.,inventory,medium,neutral,true,대체 상품 안내
